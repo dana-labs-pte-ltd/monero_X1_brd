@@ -1,0 +1,1404 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug 25 07:11:48 2019
+# Process ID: 2865
+# Current directory: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1
+# Command line: vivado -log xilinx_dma_pcie_ep.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xilinx_dma_pcie_ep.tcl
+# Log file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/xilinx_dma_pcie_ep.vds
+# Journal file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source xilinx_dma_pcie_ep.tcl -notrace
+Command: synth_design -top xilinx_dma_pcie_ep -part xcvu9p-flgb2104-2LV-e -fanout_limit 128 -resource_sharing off
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/mult_64wx64w_unsigned/mult_64wx64w_unsigned.xci
+
+INFO: [IP_Flow 19-2162] IP 'mult_64wx64w_unsigned' is locked:
+* IP definition 'Multiplier (12.0)' for IP 'mult_64wx64w_unsigned' (customized with software release 2018.3) has a different revision in the IP Catalog. * Current project part 'xcvu9p-flgb2104-2LV-e' and the part 'xcvu9p-fsgd2104-2L-e' used to customize the IP 'mult_64wx64w_unsigned' do not match.
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
+INFO: [Device 21-403] Loading part xcvu9p-flgb2104-2LV-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2955 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2383.508 ; gain = 97.715 ; free physical = 58193 ; free virtual = 62008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xilinx_dma_pcie_ep' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_dma_pcie_ep.sv:57]
+	Parameter PL_LINK_CAP_MAX_LINK_WIDTH bound to: 2 - type: integer 
+	Parameter PL_SIM_FAST_LINK_TRAINING bound to: FALSE - type: string 
+	Parameter PL_LINK_CAP_MAX_LINK_SPEED bound to: 4 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter EXT_PIPE_SIM bound to: FALSE - type: string 
+	Parameter C_ROOT_PORT bound to: FALSE - type: string 
+	Parameter C_DEVICE_NUMBER bound to: 0 - type: integer 
+	Parameter AXIS_CCIX_RX_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter AXIS_CCIX_TX_TDATA_WIDTH bound to: 256 - type: integer 
+	Parameter AXIS_CCIX_RX_TUSER_WIDTH bound to: 46 - type: integer 
+	Parameter AXIS_CCIX_TX_TUSER_WIDTH bound to: 46 - type: integer 
+	Parameter USER_CLK_FREQ bound to: 5 - type: integer 
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64 - type: integer 
+	Parameter C_NUM_USR_IRQ bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [/media/wanner/tool/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33047]
+	Parameter REFCLK_EN_TX_PATH bound to: 1'b0 
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+	Parameter REFCLK_ICNTL_RX bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (2#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33047]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/media/wanner/tool/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (3#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'OBUF' [/media/wanner/tool/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:45998]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUF' (4#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:45998]
+INFO: [Synth 8-6157] synthesizing module 'xdma_0' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/xdma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xdma_0' (5#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/xdma_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'xdma_app' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:57]
+	Parameter TCQ bound to: 1 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter PL_LINK_CAP_MAX_LINK_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_S_AXIS_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_AXIS_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_AXIS_RQ_USER_WIDTH bound to: 62 - type: integer 
+	Parameter C_S_AXIS_CQP_USER_WIDTH bound to: 88 - type: integer 
+	Parameter C_M_AXIS_RC_USER_WIDTH bound to: 75 - type: integer 
+	Parameter C_S_AXIS_CC_USER_WIDTH bound to: 33 - type: integer 
+	Parameter C_S_KEEP_WIDTH bound to: 4 - type: integer 
+	Parameter C_M_KEEP_WIDTH bound to: 4 - type: integer 
+	Parameter C_XDMA_NUM_CHNL bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axilite_clock_converter_32d32aw' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/axilite_clock_converter_32d32aw_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axilite_clock_converter_32d32aw' (6#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/axilite_clock_converter_32d32aw_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axilite_clock_converter_32d32aw_inst' of module 'axilite_clock_converter_32d32aw' has 42 connections declared, but only 38 given [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:324]
+INFO: [Synth 8-6157] synthesizing module 'axi4_lite_amm_bridge' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/axi4_lite_amm_bridge_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_lite_amm_bridge' (7#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/axi4_lite_amm_bridge_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi4_lite_amm_slave' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:66]
+	Parameter C_HAS_FIXED_WAIT bound to: 0 - type: integer 
+	Parameter C_HAS_RESPONSE bound to: 0 - type: integer 
+	Parameter C_FIXED_WRITE_WAIT bound to: 1 - type: integer 
+	Parameter C_FIXED_READ_WAIT bound to: 1 - type: integer 
+	Parameter C_HAS_FIXED_READ_LATENCY bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_AVM_BURST_WIDTH bound to: 1 - type: integer 
+	Parameter C_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WRITE_AD_DATA bound to: 2'b01 
+	Parameter READ_ADDRESS bound to: 2'b10 
+	Parameter READ_DATA bound to: 2'b11 
+	Parameter C_FIXED_READ_WAIT_1 bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:88]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:90]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:107]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:108]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:122]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:123]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:227]
+WARNING: [Synth 8-6014] Unused sequential element rd_lat_done_reg was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:188]
+WARNING: [Synth 8-6014] Unused sequential element wait_done_reg was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:222]
+WARNING: [Synth 8-6014] Unused sequential element current_state_reg was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:266]
+INFO: [Synth 8-4471] merging register 'avm_write_i1_reg' into 'local_mem_wren_reg' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:206]
+WARNING: [Synth 8-6014] Unused sequential element avm_write_i1_reg was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:206]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_lite_amm_slave' (8#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_lite_amm_slave.v:66]
+WARNING: [Synth 8-689] width (9) of port connection 'avm_burstcount' does not match port width (1) of module 'axi4_lite_amm_slave' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:416]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_128D32AW' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/axi_clock_converter_128D32AW_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_128D32AW' (9#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/axi_clock_converter_128D32AW_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_clock_converter_128D32AW_inst' of module 'axi_clock_converter_128D32AW' has 82 connections declared, but only 62 given [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:454]
+INFO: [Synth 8-6157] synthesizing module 'axi4_amm_bridge' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/axi4_amm_bridge_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_amm_bridge' (10#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/axi4_amm_bridge_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi4_amm_slave' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:66]
+	Parameter C_HAS_FIXED_WAIT bound to: 0 - type: integer 
+	Parameter C_HAS_RESPONSE bound to: 0 - type: integer 
+	Parameter C_FIXED_WRITE_WAIT bound to: 1 - type: integer 
+	Parameter C_FIXED_READ_WAIT bound to: 1 - type: integer 
+	Parameter C_HAS_FIXED_READ_LATENCY bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_WSTRB bound to: 1 - type: integer 
+	Parameter C_AVM_BURST_WIDTH bound to: 9 - type: integer 
+	Parameter C_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: virtex7 - type: string 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:98]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:99]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:100]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:101]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:105]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:107]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:108]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:109]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:110]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:111]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:112]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_amm_slave' (11#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/axi4_amm_slave.v:66]
+WARNING: [Synth 8-3848] Net s_axib_awready in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:136]
+WARNING: [Synth 8-3848] Net s_axib_wready in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:141]
+WARNING: [Synth 8-3848] Net s_axib_bid in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:142]
+WARNING: [Synth 8-3848] Net s_axib_bresp in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:143]
+WARNING: [Synth 8-3848] Net s_axib_bvalid in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:144]
+WARNING: [Synth 8-3848] Net s_axib_arready in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:152]
+WARNING: [Synth 8-3848] Net s_axib_rid in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:153]
+WARNING: [Synth 8-3848] Net s_axib_rdata in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:154]
+WARNING: [Synth 8-3848] Net s_axib_rresp in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:155]
+WARNING: [Synth 8-3848] Net s_axib_rlast in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:156]
+WARNING: [Synth 8-3848] Net s_axib_rvalid in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:157]
+WARNING: [Synth 8-3848] Net avm_byteenable_0 in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:207]
+WARNING: [Synth 8-3848] Net avm_beginbursttransfer_0 in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:213]
+WARNING: [Synth 8-3848] Net avm_burstcount_0 in module/entity xdma_app does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:212]
+INFO: [Synth 8-6155] done synthesizing module 'xdma_app' (12#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xdma_app.v:57]
+INFO: [Synth 8-6157] synthesizing module 'multi_core_top' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:4]
+	Parameter IL_KEY_ADDR bound to: 8'b01000000 
+	Parameter FL_KEY_ADDR bound to: 8'b01010000 
+	Parameter Z_ADDR bound to: 8'b00000100 
+	Parameter CFG_BITS bound to: 4 - type: integer 
+	Parameter CORE_ID_BITS bound to: 6 - type: integer 
+	Parameter ASIC_ID_BITS bound to: 6 - type: integer 
+	Parameter CFG_SPEEDUP_ML_LOG2 bound to: 15 - type: integer 
+	Parameter CFG_SPEEDUP_IL_LOG2 bound to: 15 - type: integer 
+	Parameter CORE_CFG_SPEEDUP_MODE bound to: 1 - type: integer 
+	Parameter CORE_CFG_SINGLE_STEP bound to: 2 - type: integer 
+	Parameter ADDR_WIDTH bound to: 19 - type: integer 
+	Parameter UNROLL bound to: 2 - type: integer 
+	Parameter CORE_NUM bound to: 1 - type: integer 
+INFO: [Synth 8-251] ADDR_WIDTH = 19 [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:22]
+INFO: [Synth 8-251] UNROLL     = 2 [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:40]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:41]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:42]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:46]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:47]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:48]
+INFO: [Synth 8-6157] synthesizing module 'cn_top' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_top.v:4]
+	Parameter IL_KEY_ADDR bound to: 8'b01000000 
+	Parameter FL_KEY_ADDR bound to: 8'b01010000 
+	Parameter Z_ADDR bound to: 8'b00000100 
+	Parameter CFG_BITS bound to: 4 - type: integer 
+	Parameter CORE_ID_BITS bound to: 6 - type: integer 
+	Parameter ASIC_ID_BITS bound to: 6 - type: integer 
+	Parameter CFG_SPEEDUP_ML_LOG2 bound to: 15 - type: integer 
+	Parameter CFG_SPEEDUP_IL_LOG2 bound to: 15 - type: integer 
+	Parameter CORE_CFG_SPEEDUP_MODE bound to: 1 - type: integer 
+	Parameter CORE_CFG_SINGLE_STEP bound to: 2 - type: integer 
+	Parameter ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter UNROLL bound to: 2 - type: integer 
+	Parameter version bound to: 419890198 - type: integer 
+INFO: [Synth 8-251] ADDR_WIDTH = 15 [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_top.v:21]
+INFO: [Synth 8-251] UNROLL     = 2 [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'cn_ml' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:3]
+	Parameter IL_KEY_ADDR bound to: 8'b01000000 
+	Parameter FL_KEY_ADDR bound to: 8'b01010000 
+	Parameter Z_ADDR bound to: 8'b00000100 
+	Parameter CFG_BITS bound to: 4 - type: integer 
+	Parameter CORE_ID_BITS bound to: 6 - type: integer 
+	Parameter ASIC_ID_BITS bound to: 6 - type: integer 
+	Parameter CFG_SPEEDUP_ML_LOG2 bound to: 15 - type: integer 
+	Parameter CFG_SPEEDUP_IL_LOG2 bound to: 15 - type: integer 
+	Parameter CORE_CFG_SPEEDUP_MODE bound to: 1 - type: integer 
+	Parameter CORE_CFG_SINGLE_STEP bound to: 2 - type: integer 
+	Parameter ADDR_WIDTH bound to: 15 - type: integer 
+	Parameter MULTIPLIER_DELAY bound to: 1 - type: integer 
+	Parameter ELIMINATE_WAIT_STATE bound to: 1 - type: integer 
+	Parameter BYTE_ADDRESS_BITS bound to: 19 - type: integer 
+	Parameter phase_idle bound to: 8'b00000001 
+	Parameter phase_0_read_stage_1 bound to: 8'b00000010 
+	Parameter phase_1_aes_stage_1 bound to: 8'b00000100 
+	Parameter phase_2_write_stage_1 bound to: 8'b00001000 
+	Parameter phase_3_read_stage_2 bound to: 8'b00010000 
+	Parameter phase_4_randommath_stage_2 bound to: 8'b00100000 
+	Parameter phase_5_mul_stage_2 bound to: 8'b01000000 
+	Parameter phase_6_write_stage_2 bound to: 8'b10000000 
+	Parameter speedup_mask bound to: 0 - type: integer 
+	Parameter last_iteration_full bound to: 524287 - type: integer 
+	Parameter last_iteration_speedup bound to: 15 - type: integer 
+INFO: [Synth 8-251] MULTIPLIER_DELAY           = 1 [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:90]
+INFO: [Synth 8-251] ELIMINATE_WAIT_STATE       = 1 [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:165]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:166]
+INFO: [Synth 8-155] case statement is not full and has no default [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:307]
+INFO: [Synth 8-6157] synthesizing module 'random_math' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/random_math.v:1]
+	Parameter s_idle bound to: 3'b001 
+	Parameter s_run bound to: 3'b010 
+	Parameter s_ret bound to: 3'b100 
+	Parameter MUL bound to: 0 - type: integer 
+	Parameter ADD bound to: 1 - type: integer 
+	Parameter SUB bound to: 2 - type: integer 
+	Parameter ROR bound to: 3 - type: integer 
+	Parameter ROL bound to: 4 - type: integer 
+	Parameter XOR bound to: 5 - type: integer 
+	Parameter RET bound to: 6 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/random_math.v:33]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/random_math.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/random_math.v:142]
+INFO: [Synth 8-6155] done synthesizing module 'random_math' (13#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/random_math.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult_64wx64w_unsigned' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/mult_64wx64w_unsigned_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_64wx64w_unsigned' (14#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/.Xil/Vivado-2865-ubuntu/realtime/mult_64wx64w_unsigned_stub.v:6]
+WARNING: [Synth 8-5788] Register in_r0_reg[0] in module cn_ml is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:285]
+WARNING: [Synth 8-5788] Register in_r0_reg[1] in module cn_ml is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:285]
+WARNING: [Synth 8-5788] Register in_r0_reg[2] in module cn_ml is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:285]
+WARNING: [Synth 8-5788] Register in_r0_reg[3] in module cn_ml is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:285]
+WARNING: [Synth 8-3848] Net ram_rden in module/entity cn_ml does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'cn_ml' (15#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_ml.v:3]
+WARNING: [Synth 8-689] width (64) of port connection 'random_rdata' does not match port width (56) of module 'cn_ml' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_top.v:217]
+WARNING: [Synth 8-689] width (1) of port connection 'out_ax0' does not match port width (128) of module 'cn_ml' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_top.v:218]
+WARNING: [Synth 8-689] width (1) of port connection 'out_bx0' does not match port width (128) of module 'cn_ml' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_top.v:219]
+WARNING: [Synth 8-689] width (1) of port connection 'out_bx1' does not match port width (128) of module 'cn_ml' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_top.v:220]
+INFO: [Synth 8-6157] synthesizing module 'cipherRound_mod' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:3]
+	Parameter UNROLL bound to: 1 - type: integer 
+	Parameter RKW bound to: 128 - type: integer 
+	Parameter N_last_iterations bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'cipherRound_mod' (16#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cipherRound.v:3]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_top.v:256]
+INFO: [Synth 8-6157] synthesizing module 'uram_32768D128W' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/uram_32768D128W.v:1]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_spram' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8483]
+	Parameter MEMORY_SIZE bound to: 4194304 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: ultra - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: disable_sleep - type: string 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 15 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter WRITE_MODE_A bound to: write_first - type: string 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: 3 - type: integer 
+	Parameter P_CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter P_WRITE_MODE_A bound to: 0 - type: integer 
+	Parameter P_MEMORY_OPTIMIZATION bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter MEMORY_SIZE bound to: 4194304 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 3 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: 0 - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 15 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter WRITE_MODE_A bound to: 0 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 15 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: 0 - type: string 
+	Parameter READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter WRITE_MODE_B bound to: 0 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: ultra - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 128 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 32768 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 128 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 128 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 15 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 15 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 15 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 15 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 128 - type: integer 
+	Parameter rstb_loop_iter bound to: 128 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (17#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_spram' (18#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8483]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'uram_32768D128W' (19#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/uram_32768D128W.v:1]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'cn_top' (20#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/cn_top.v:4]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:33]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:38]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'genblk1[0].cn_top_inst'. This will prevent further optimization [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:121]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+WARNING: [Synth 8-6014] Unused sequential element mem_addr_lat_reg[1] was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:70]
+WARNING: [Synth 8-6014] Unused sequential element mem_addr_lat_reg[0] was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:70]
+WARNING: [Synth 8-6014] Unused sequential element reg_addr_lat_reg[1] was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:72]
+WARNING: [Synth 8-6014] Unused sequential element reg_addr_lat_reg[0] was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'multi_core_top' (21#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/multi_core_top.v:4]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xilinx_dma_pcie_ep' (22#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_dma_pcie_ep.sv:57]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port sleep
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port regcea
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectsbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port injectdbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port clkb
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port rstb
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port enb
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port regceb
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port web[0]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[14]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[13]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[12]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[11]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[10]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[9]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[8]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[7]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[6]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[5]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[4]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[3]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[2]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[1]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port addrb[0]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[127]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[126]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[125]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[124]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[123]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[122]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[121]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[120]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[119]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[118]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[117]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[116]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[115]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[114]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[113]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[112]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[111]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[110]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[109]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[108]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[107]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[106]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[105]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[104]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[103]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[102]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[101]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[100]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[99]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[98]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[97]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[96]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[95]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[94]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[93]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[92]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[91]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[90]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[89]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[88]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[87]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[86]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[85]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[84]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[83]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[82]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[81]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[80]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[79]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[78]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[77]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[76]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[75]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[74]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[73]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[72]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[71]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[70]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[69]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[68]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[67]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[66]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[65]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[64]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[63]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[62]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[61]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[60]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[59]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[58]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[57]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[56]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[55]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[54]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[53]
+WARNING: [Synth 8-3331] design xpm_memory_base has unconnected port dinb[52]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2553.227 ; gain = 267.434 ; free physical = 58171 ; free virtual = 62004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2553.227 ; gain = 267.434 ; free physical = 58185 ; free virtual = 62018
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2553.227 ; gain = 267.434 ; free physical = 58185 ; free virtual = 62018
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/mult_64wx64w_unsigned/mult_64wx64w_unsigned/mult_64wx64w_unsigned_in_context.xdc] for cell 'multi_core_top_inst/genblk1[0].cn_top_inst/cn_ml_inst/mult_64wx64w_inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/mult_64wx64w_unsigned/mult_64wx64w_unsigned/mult_64wx64w_unsigned_in_context.xdc] for cell 'multi_core_top_inst/genblk1[0].cn_top_inst/cn_ml_inst/mult_64wx64w_inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc] for cell 'xdma_0_i'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc] for cell 'xdma_0_i'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mem_clk_inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mem_clk_inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/axi4_amm_bridge/axi4_amm_bridge_in_context.xdc] for cell 'xdma_app_i/axi4_amm_bridge_dma_inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/axi4_amm_bridge/axi4_amm_bridge_in_context.xdc] for cell 'xdma_app_i/axi4_amm_bridge_dma_inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/axi4_lite_amm_bridge/axi4_lite_amm_bridge_in_context.xdc] for cell 'xdma_app_i/axi4_lite_amm_bridge_inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/axi4_lite_amm_bridge/axi4_lite_amm_bridge_in_context.xdc] for cell 'xdma_app_i/axi4_lite_amm_bridge_inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi_clock_converter_128D32AW/axi_clock_converter_128D32AW/axi_clock_converter_128D32AW_in_context.xdc] for cell 'xdma_app_i/axi_clock_converter_128D32AW_inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi_clock_converter_128D32AW/axi_clock_converter_128D32AW/axi_clock_converter_128D32AW_in_context.xdc] for cell 'xdma_app_i/axi_clock_converter_128D32AW_inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axilite_clock_converter_32d32aw/axilite_clock_converter_32d32aw/axilite_clock_converter_32d32aw_in_context.xdc] for cell 'xdma_app_i/axilite_clock_converter_32d32aw_inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axilite_clock_converter_32d32aw/axilite_clock_converter_32d32aw/axilite_clock_converter_32d32aw_in_context.xdc] for cell 'xdma_app_i/axilite_clock_converter_32d32aw_inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].cdr_ctrl_on_eidle_i/sync_gen34/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].cdr_ctrl_on_eidle_i/sync_gen34_eios_det/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].cdr_ctrl_on_eidle_i/sync_rxcdrreset_in/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].cdr_ctrl_on_eidle_i/sync_rxelecidle/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_ctrl/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_ctrl/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_lffs/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_lffs/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_lffs/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_lffs/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_lffs/sync_vec[4].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_lffs/sync_vec[5].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_preset/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_preset/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_preset/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txcoeff/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txcoeff/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txcoeff/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txcoeff/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txcoeff/sync_vec[4].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txcoeff/sync_vec[5].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txpreset/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txpreset/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txpreset/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_rxeq_i/sync_txpreset/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_coeff/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_coeff/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_coeff/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_coeff/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_coeff/sync_vec[4].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_coeff/sync_vec[5].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_ctrl/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_ctrl/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_preset/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_preset/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_preset/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].phy_txeq_i/sync_preset/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].receiver_detect_termination_i/sync_mac_in_detect/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].receiver_detect_termination_i/sync_rxelecidle/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[0].sync_cdrhold/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].cdr_ctrl_on_eidle_i/sync_gen34/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].cdr_ctrl_on_eidle_i/sync_gen34_eios_det/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].cdr_ctrl_on_eidle_i/sync_rxcdrreset_in/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].cdr_ctrl_on_eidle_i/sync_rxelecidle/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_ctrl/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_ctrl/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_lffs/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_lffs/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_lffs/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_lffs/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_lffs/sync_vec[4].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_lffs/sync_vec[5].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_preset/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_preset/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_preset/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txcoeff/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txcoeff/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txcoeff/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txcoeff/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txcoeff/sync_vec[4].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txcoeff/sync_vec[5].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txpreset/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txpreset/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txpreset/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_rxeq_i/sync_txpreset/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_coeff/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_coeff/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_coeff/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_coeff/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_coeff/sync_vec[4].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_coeff/sync_vec[5].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_ctrl/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_ctrl/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_preset/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_preset/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_preset/sync_vec[2].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].phy_txeq_i/sync_preset/sync_vec[3].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].receiver_detect_termination_i/sync_mac_in_detect/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].receiver_detect_termination_i/sync_rxelecidle/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_lane[1].sync_cdrhold/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_cplllock/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_cplllock/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_gtpowergood/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_gtpowergood/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_phystatus/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_phystatus/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_qpll0lock/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_qpll1lock/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_rxresetdone/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_rxresetdone/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_txprogdivresetdone/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_txprogdivresetdone/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_txresetdone/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_txresetdone/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_txsync_done/sync_vec[0].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched 'xdma_0_i/inst/pcie4_ip_i/inst/gt_top_i/diablo_gt.diablo_gt_phy_wrapper/phy_rst_i/sync_txsync_done/sync_vec[1].sync_cell_i/sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:1]
+WARNING: [Vivado 12-508] No pins matched '*sync_reg[0]/D'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:150]
+WARNING: [Vivado 12-627] No clocks matched '*user*'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:153]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:153]
+WARNING: [Vivado 12-508] No pins matched 'mem_clk_inst/inst/plle4_adv_inst/CLKOUT1'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:153]
+WARNING: [Vivado 12-627] No clocks matched '*user*'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:154]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:154]
+WARNING: [Vivado 12-627] No clocks matched '*user*'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:155]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:155]
+WARNING: [Vivado 12-508] No pins matched 'mem_clk_inst/inst/plle4_adv_inst/CLKOUT1'. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc:156]
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xilinx_dma_pcie_ep_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/xilinx_pcie_xdma_ref_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xilinx_dma_pcie_ep_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xilinx_dma_pcie_ep_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2737.852 ; gain = 0.000 ; free physical = 58005 ; free virtual = 61824
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2737.852 ; gain = 0.000 ; free physical = 58005 ; free virtual = 61824
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'multi_core_top_inst/genblk1[0].cn_top_inst/cn_ml_inst/mult_64wx64w_inst' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'xdma_app_i/axi_clock_converter_128D32AW_inst' at clock pin 'm_axi_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'xdma_app_i/axilite_clock_converter_32d32aw_inst' at clock pin 'm_axi_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2745.789 ; gain = 459.996 ; free physical = 58161 ; free virtual = 61991
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flgb2104-2LV-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2745.789 ; gain = 459.996 ; free physical = 58161 ; free virtual = 61990
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[0]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[0]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[1]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[1]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[0]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[0]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[1]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[1]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[0]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[0]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[1]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[1]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[0]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[0]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[1]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[1]. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/xdma_0/xdma_0/xdma_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for free_run_clock_n_in. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for free_run_clock_n_in. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for free_run_clock_p_in. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for free_run_clock_p_in. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 7).
+Applied set_property DONT_TOUCH = true for multi_core_top_inst/\genblk1[0].cn_top_inst /cn_ml_inst/mult_64wx64w_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xdma_0_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mem_clk_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xdma_app_i/axi4_amm_bridge_dma_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xdma_app_i/axi4_lite_amm_bridge_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xdma_app_i/axi_clock_converter_128D32AW_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for xdma_app_i/axilite_clock_converter_32d32aw_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2745.789 ; gain = 459.996 ; free physical = 58161 ; free virtual = 61990
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  s_idle |                              001 |                              001
+                   s_run |                              010 |                              010
+                   s_ret |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cs_state_reg' in module 'random_math'
+INFO: [Synth 8-802] inferred FSM for state register 'cs_state_reg' in module 'cn_ml'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+              phase_idle |                         00000001 |                         00000001
+    phase_0_read_stage_1 |                         00000010 |                         00000010
+     phase_1_aes_stage_1 |                         00000100 |                         00000100
+   phase_2_write_stage_1 |                         00001000 |                         00001000
+    phase_3_read_stage_2 |                         00010000 |                         00010000
+phase_4_randommath_stage_2 |                         00100000 |                         00100000
+     phase_5_mul_stage_2 |                         01000000 |                         01000000
+   phase_6_write_stage_2 |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cs_state_reg' in module 'cn_ml'
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg"'.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2745.789 ; gain = 459.996 ; free physical = 58125 ; free virtual = 61970
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |cn_top__GB0             |           1|     41304|
+|2     |cn_top__GB1             |           1|     35793|
+|3     |multi_core_top__GC0     |           1|       866|
+|4     |xilinx_dma_pcie_ep__GC0 |           1|      2914|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 8     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 5     
+	   3 Input    128 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 11    
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 32    
+	   4 Input      8 Bit         XORs := 16    
++---Registers : 
+	              512 Bit    Registers := 1     
+	              128 Bit    Registers := 20    
+	               64 Bit    Registers := 89    
+	               32 Bit    Registers := 33    
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 37    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	            4096K Bit         RAMs := 4     
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 2     
+	   2 Input    512 Bit        Muxes := 1     
+	   4 Input    128 Bit        Muxes := 5     
+	   2 Input    128 Bit        Muxes := 7     
+	   2 Input     64 Bit        Muxes := 91    
+	   2 Input     32 Bit        Muxes := 190   
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 30    
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 51    
+	   3 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xpm_memory_base__1 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
++---RAMs : 
+	            4096K Bit         RAMs := 1     
+Module xpm_memory_base__2 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
++---RAMs : 
+	            4096K Bit         RAMs := 1     
+Module xpm_memory_base__3 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
++---RAMs : 
+	            4096K Bit         RAMs := 1     
+Module xpm_memory_base 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
++---RAMs : 
+	            4096K Bit         RAMs := 1     
+Module cipherRound_mod 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 32    
+	   4 Input      8 Bit         XORs := 16    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 16    
+Module random_math 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 9     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 29    
+	   3 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 9     
+Module cn_ml 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 8     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
++---XORs : 
+	   3 Input    128 Bit         XORs := 1     
+	   2 Input    128 Bit         XORs := 4     
+	   2 Input     64 Bit         XORs := 11    
++---Registers : 
+	              512 Bit    Registers := 1     
+	              128 Bit    Registers := 11    
+	               64 Bit    Registers := 3     
+	               32 Bit    Registers := 13    
+	               18 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 2     
+	   2 Input    512 Bit        Muxes := 1     
+	   4 Input    128 Bit        Muxes := 4     
+	   2 Input    128 Bit        Muxes := 3     
+	   2 Input     64 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 2     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 14    
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+Module cn_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 86    
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input    128 Bit        Muxes := 1     
+	   2 Input    128 Bit        Muxes := 4     
+	   2 Input     64 Bit        Muxes := 85    
+	   2 Input     32 Bit        Muxes := 175   
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module multi_core_top 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module axi4_lite_amm_slave 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module axi4_amm_slave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 3     
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/imports/random_math.v:144]
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_3/xpm_memory_spram_inst/xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_2/xpm_memory_spram_inst/xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_1/xpm_memory_spram_inst/xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"'.
+INFO: [Synth 8-5780] Default cascade height of 8 will be used for URAM '"multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_0/xpm_memory_spram_inst/xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg"'.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (multi_core_top_inst/\genblk1[0].cn_top_inst /i_0/\sts_reg_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_0/xdma_app_i/axi4_lite_amm_slave_inst/avm_waitrequest_reg' (FDS) to 'i_0/xdma_app_i/axi4_lite_amm_slave_inst/avm_resp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\xdma_app_i/axi4_lite_amm_slave_inst /\avm_resp_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 3143.320 ; gain = 857.527 ; free physical = 58031 ; free virtual = 61881
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6057] Memory: "gen_wr_a.gen_word_narrow.mem_reg" defined in module: "multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_3/xpm_memory_spram_inst/xpm_memory_base_inst " implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "gen_wr_a.gen_word_narrow.mem_reg" defined in module: "multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_2/xpm_memory_spram_inst/xpm_memory_base_inst " implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "gen_wr_a.gen_word_narrow.mem_reg" defined in module: "multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_1/xpm_memory_spram_inst/xpm_memory_base_inst " implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "gen_wr_a.gen_word_narrow.mem_reg" defined in module: "multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_0/xpm_memory_spram_inst/xpm_memory_base_inst " implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|cipherRound_mod | SBOXf14    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf13    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf12    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf11    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf10    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf9     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf8     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf7     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf6     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf5     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf4     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf3     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf2     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf1     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf0     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf      | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf14    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf13    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf12    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf11    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf10    | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf9     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf8     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf7     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf6     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf5     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf4     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf3     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf2     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf1     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf0     | 256x8         | LUT            | 
+|cipherRound_mod | SBOXf      | 256x8         | LUT            | 
++----------------+------------+---------------+----------------+
+
+
+Ultra RAM: Preliminary Mapping  Report (see note below)
++----------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|Module Name                                                                                                           | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | URAM288 | Matrix Shape | FF provided for Pipeline | FF absorbed | 
++----------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+|multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_3/xpm_memory_spram_inst/xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 32 K x 128             | W | R |                        |   |   | Port A           | 16      | 8x1          | 0                        | 0           | 
+|multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_2/xpm_memory_spram_inst/xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 32 K x 128             | W | R |                        |   |   | Port A           | 16      | 8x1          | 0                        | 0           | 
+|multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_1/xpm_memory_spram_inst/xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 32 K x 128             | W | R |                        |   |   | Port A           | 16      | 8x1          | 0                        | 0           | 
+|multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_0/xpm_memory_spram_inst/xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | 32 K x 128             | W | R |                        |   |   | Port A           | 16      | 8x1          | 0                        | 0           | 
++----------------------------------------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+---------+--------------+--------------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Ultra RAMs at the current stage of the synthesis flow. Some Ultra RAMs may be reimplemented as non Ultra RAM primitives later in the synthesis flow. Multiple instantiated Ultra RAMs are reported only once. Fields "FF provided for Pipeline" and "FF absorbed" respectively indicate number of registers available for pipelining and number of registers absorbed in the URAM matrix for pipelining. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|random_math | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|random_math | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|random_math | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|random_math | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |cn_top__GB0             |           1|     13801|
+|2     |cn_top__GB1             |           1|     23616|
+|3     |multi_core_top__GC0     |           1|       358|
+|4     |xilinx_dma_pcie_ep__GC0 |           1|      2577|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'xdma_0_i/axi_aclk' to pin 'xdma_0_i/bbstub_axi_aclk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mem_clk_inst/clk_out1' to pin 'mem_clk_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'mem_clk_inst/clk_out2' to pin 'mem_clk_inst/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:41 . Memory (MB): peak = 3143.320 ; gain = 857.527 ; free physical = 57569 ; free virtual = 61435
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:15 ; elapsed = 00:02:31 . Memory (MB): peak = 3765.984 ; gain = 1480.191 ; free physical = 57484 ; free virtual = 61354
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6057] Memory: "gen_wr_a.gen_word_narrow.mem_reg" defined in module: "multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_3/xpm_memory_spram_inst/xpm_memory_base_inst " implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "gen_wr_a.gen_word_narrow.mem_reg" defined in module: "multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_2/xpm_memory_spram_inst/xpm_memory_base_inst " implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "gen_wr_a.gen_word_narrow.mem_reg" defined in module: "multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_1/xpm_memory_spram_inst/xpm_memory_base_inst " implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+WARNING: [Synth 8-6057] Memory: "gen_wr_a.gen_word_narrow.mem_reg" defined in module: "multi_core_top_inst/\genblk1[0].cn_top_inst /i_1/\cryptonightR_ram_inst_0/xpm_memory_spram_inst/xpm_memory_base_inst " implemented as Ultra-Ram has no pipeline registers. It is recommended to use pipeline registers to achieve high performance.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |multi_core_top__GC0     |           1|       358|
+|2     |xilinx_dma_pcie_ep__GC0 |           1|      2577|
+|3     |cn_top_GT0              |           1|     37438|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:23 ; elapsed = 00:02:39 . Memory (MB): peak = 3765.984 ; gain = 1480.191 ; free physical = 57519 ; free virtual = 61388
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[0]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[1]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[2]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[3]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[4]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[5]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[6]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[7]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[8]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[9]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[10]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[11]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[12]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[13]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[14]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[15]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[16]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[17]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[18]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[19]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[20]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[21]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[22]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[23]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[24]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[25]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[26]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[27]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[28]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[29]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[30]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_wrdata_core_reg_n_0_[31]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_address_core_reg_n_0_[1]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_address_core_reg_n_0_[2]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_address_core_reg_n_0_[3]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_address_core_reg_n_0_[4]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_address_core_reg_n_0_[5]  because some of its loads are not in same hierarchy as its driver   
+INFO: [Synth 8-5777] Ignored max_fanout on net \reg_address_core_reg_n_0_[6]  because some of its loads are not in same hierarchy as its driver   
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axilite_clock_converter_32d32aw_inst  has unconnected pin s_axi_awprot[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axilite_clock_converter_32d32aw_inst  has unconnected pin s_axi_awprot[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axilite_clock_converter_32d32aw_inst  has unconnected pin s_axi_awprot[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axilite_clock_converter_32d32aw_inst  has unconnected pin s_axi_arprot[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axilite_clock_converter_32d32aw_inst  has unconnected pin s_axi_arprot[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axilite_clock_converter_32d32aw_inst  has unconnected pin s_axi_arprot[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awlock[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awcache[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awcache[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awcache[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awcache[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awprot[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awprot[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awprot[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awregion[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awregion[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awregion[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awregion[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awqos[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awqos[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awqos[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_awqos[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arlock[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arcache[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arcache[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arcache[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arcache[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arprot[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arprot[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arprot[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arregion[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arregion[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arregion[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arregion[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arqos[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arqos[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arqos[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \xdma_app_i/axi_clock_converter_128D32AW_inst  has unconnected pin s_axi_arqos[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:24 ; elapsed = 00:02:41 . Memory (MB): peak = 3765.984 ; gain = 1480.191 ; free physical = 57517 ; free virtual = 61386
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:25 ; elapsed = 00:02:41 . Memory (MB): peak = 3765.984 ; gain = 1480.191 ; free physical = 57517 ; free virtual = 61386
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:26 ; elapsed = 00:02:42 . Memory (MB): peak = 3765.984 ; gain = 1480.191 ; free physical = 57516 ; free virtual = 61385
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:26 ; elapsed = 00:02:43 . Memory (MB): peak = 3765.984 ; gain = 1480.191 ; free physical = 57516 ; free virtual = 61385
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:27 ; elapsed = 00:02:43 . Memory (MB): peak = 3765.984 ; gain = 1480.191 ; free physical = 57516 ; free virtual = 61385
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:27 ; elapsed = 00:02:43 . Memory (MB): peak = 3765.984 ; gain = 1480.191 ; free physical = 57516 ; free virtual = 61385
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |mult_64wx64w_unsigned           |         1|
+|2     |clk_wiz_0                       |         1|
+|3     |xdma_0                          |         1|
+|4     |axilite_clock_converter_32d32aw |         1|
+|5     |axi4_lite_amm_bridge            |         1|
+|6     |axi_clock_converter_128D32AW    |         1|
+|7     |axi4_amm_bridge                 |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |axi4_amm_bridge                 |     1|
+|2     |axi4_lite_amm_bridge            |     1|
+|3     |axi_clock_converter_128D32AW    |     1|
+|4     |axilite_clock_converter_32d32aw |     1|
+|5     |clk_wiz_0                       |     1|
+|6     |mult_64wx64w_unsigned           |     1|
+|7     |xdma_0                          |     1|
+|8     |CARRY8                          |    91|
+|9     |DSP_ALU                         |     3|
+|10    |DSP_A_B_DATA                    |     3|
+|11    |DSP_C_DATA                      |     3|
+|12    |DSP_MULTIPLIER                  |     3|
+|13    |DSP_M_DATA                      |     3|
+|14    |DSP_OUTPUT                      |     3|
+|15    |DSP_PREADD                      |     3|
+|16    |DSP_PREADD_DATA                 |     3|
+|17    |IBUFDS_GTE4                     |     1|
+|18    |LUT1                            |     5|
+|19    |LUT2                            |  1235|
+|20    |LUT3                            |  1016|
+|21    |LUT4                            |   893|
+|22    |LUT5                            |  1827|
+|23    |LUT6                            |  4724|
+|24    |MUXF7                           |  1343|
+|25    |MUXF8                           |   592|
+|26    |URAM288                         |     8|
+|27    |URAM288_1                       |    48|
+|28    |URAM288_2                       |     8|
+|29    |FDCE                            |  6950|
+|30    |FDPE                            |  1849|
+|31    |FDRE                            |   633|
+|32    |FDSE                            |     1|
+|33    |IBUF                            |     1|
+|34    |OBUF                            |     3|
++------+--------------------------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+--------------------+------+
+|      |Instance                       |Module              |Cells |
++------+-------------------------------+--------------------+------+
+|1     |top                            |                    | 23198|
+|2     |  multi_core_top_inst          |multi_core_top      | 20679|
+|3     |    \genblk1[0].cn_top_inst    |cn_top              | 20327|
+|4     |      aes_inst_ml              |cipherRound_mod     |   384|
+|5     |      cn_ml_inst               |cn_ml               | 11510|
+|6     |        random_math_inst       |random_math         |  3487|
+|7     |          p_1_out              |p_1_out_funnel      |     8|
+|8     |          p_1_out__0           |p_1_out_funnel__1   |     8|
+|9     |          p_1_out__1           |p_1_out_funnel__2   |     8|
+|10    |      cryptonightR_ram_inst_0  |uram_32768D128W     |    16|
+|11    |        xpm_memory_spram_inst  |xpm_memory_spram_5  |    16|
+|12    |          xpm_memory_base_inst |xpm_memory_base     |    16|
+|13    |      cryptonightR_ram_inst_1  |uram_32768D128W_0   |    16|
+|14    |        xpm_memory_spram_inst  |xpm_memory_spram_4  |    16|
+|15    |          xpm_memory_base_inst |xpm_memory_base__3  |    16|
+|16    |      cryptonightR_ram_inst_2  |uram_32768D128W_1   |    16|
+|17    |        xpm_memory_spram_inst  |xpm_memory_spram_3  |    16|
+|18    |          xpm_memory_base_inst |xpm_memory_base__2  |    16|
+|19    |      cryptonightR_ram_inst_3  |uram_32768D128W_2   |   144|
+|20    |        xpm_memory_spram_inst  |xpm_memory_spram    |   144|
+|21    |          xpm_memory_base_inst |xpm_memory_base__1  |    16|
+|22    |  xdma_app_i                   |xdma_app            |  1699|
+|23    |    axi4_lite_amm_slave_inst   |axi4_lite_amm_slave |   171|
+|24    |    axi4_amm_slave_dma_isnt    |axi4_amm_slave      |   525|
++------+-------------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:27 ; elapsed = 00:02:43 . Memory (MB): peak = 3765.984 ; gain = 1480.191 ; free physical = 57516 ; free virtual = 61385
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 38 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:20 ; elapsed = 00:02:35 . Memory (MB): peak = 3765.984 ; gain = 1287.629 ; free physical = 57548 ; free virtual = 61417
+Synthesis Optimization Complete : Time (s): cpu = 00:02:27 ; elapsed = 00:02:43 . Memory (MB): peak = 3765.992 ; gain = 1480.191 ; free physical = 57550 ; free virtual = 61419
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2030 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3798.000 ; gain = 0.000 ; free physical = 57455 ; free virtual = 61324
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 3 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+220 Infos, 249 Warnings, 38 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:40 ; elapsed = 00:03:02 . Memory (MB): peak = 3798.000 ; gain = 2404.027 ; free physical = 57617 ; free virtual = 61487
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3798.000 ; gain = 0.000 ; free physical = 57617 ; free virtual = 61487
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/synth_1/xilinx_dma_pcie_ep.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xilinx_dma_pcie_ep_utilization_synth.rpt -pb xilinx_dma_pcie_ep_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 25 07:15:04 2019...

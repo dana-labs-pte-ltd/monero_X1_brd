@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug 25 07:11:37 2019
+# Process ID: 2729
+# Current directory: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/mult_64wx64w_unsigned_synth_1
+# Command line: vivado -log mult_64wx64w_unsigned.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_64wx64w_unsigned.tcl
+# Log file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/mult_64wx64w_unsigned_synth_1/mult_64wx64w_unsigned.vds
+# Journal file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/mult_64wx64w_unsigned_synth_1/vivado.jou
+#-----------------------------------------------------------
+source mult_64wx64w_unsigned.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mult_64wx64w_unsigned, cache-ID = e6ce83e6fc0f89a7.
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 25 07:11:47 2019...

@@ -1,0 +1,498 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug 25 00:11:06 2019
+# Process ID: 14257
+# Current directory: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_lite_amm_bridge_synth_1
+# Command line: vivado -log axi4_lite_amm_bridge.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi4_lite_amm_bridge.tcl
+# Log file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_lite_amm_bridge_synth_1/axi4_lite_amm_bridge.vds
+# Journal file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_lite_amm_bridge_synth_1/vivado.jou
+#-----------------------------------------------------------
+source axi4_lite_amm_bridge.tcl -notrace
+Command: synth_design -top axi4_lite_amm_bridge -part xcvu9p-flgb2104-2LV-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
+INFO: [Device 21-403] Loading part xcvu9p-flgb2104-2LV-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14368 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2363.773 ; gain = 96.715 ; free physical = 39609 ; free virtual = 47514
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi4_lite_amm_bridge' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/synth/axi4_lite_amm_bridge.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_amm_bridge_v1_0_9_top' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1768]
+	Parameter C_ADDRESS_MODE bound to: 0 - type: integer 
+	Parameter C_HAS_FIXED_WAIT bound to: 0 - type: integer 
+	Parameter C_HAS_RESPONSE bound to: 0 - type: integer 
+	Parameter C_FIXED_WRITE_WAIT bound to: 1 - type: integer 
+	Parameter C_FIXED_READ_WAIT bound to: 1 - type: integer 
+	Parameter C_HAS_FIXED_READ_LATENCY bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_AVM_BURST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_BURST_LENGTH bound to: 4 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 256 - type: integer 
+	Parameter C_NUM_ADDRESS_RANGES bound to: 0 - type: integer 
+	Parameter C_NUM_OUTSTANDING bound to: 2 - type: integer 
+	Parameter C_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_BASE1_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_BASE2_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000100 
+	Parameter C_BASE3_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001000 
+	Parameter C_BASE4_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001100 
+	Parameter C_HIGH1_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000011 
+	Parameter C_HIGH2_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000101 
+	Parameter C_HIGH3_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001001 
+	Parameter C_HIGH4_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter All_zero bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'axi_amm_bridge_v1_0_9_lite' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:138]
+	Parameter C_ADDRESS_MODE bound to: 0 - type: integer 
+	Parameter C_HAS_FIXED_WAIT bound to: 0 - type: integer 
+	Parameter C_HAS_RESPONSE bound to: 0 - type: integer 
+	Parameter C_FIXED_WRITE_WAIT bound to: 1 - type: integer 
+	Parameter C_FIXED_READ_WAIT bound to: 1 - type: integer 
+	Parameter C_HAS_FIXED_READ_LATENCY bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 256 - type: integer 
+	Parameter C_NUM_ADDRESS_RANGES bound to: 0 - type: integer 
+	Parameter C_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_BASE1_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_BASE2_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000100 
+	Parameter C_BASE3_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001000 
+	Parameter C_BASE4_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001100 
+	Parameter C_HIGH1_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000011 
+	Parameter C_HIGH2_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000101 
+	Parameter C_HIGH3_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001001 
+	Parameter C_HIGH4_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter WRITE_AD_DATA bound to: 4'b0001 
+	Parameter WRITE_RESP bound to: 4'b0010 
+	Parameter READ_ADDRESS bound to: 4'b0011 
+	Parameter READ_DATA bound to: 4'b0100 
+	Parameter INV_WRITE_ADDRESS bound to: 4'b0101 
+	Parameter INV_READ_ADDRESS bound to: 4'b0110 
+	Parameter INV_WRITE_DATA bound to: 4'b0111 
+	Parameter INV_READ_DATA bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'axi_amm_bridge_v1_0_9_lite' (1#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:138]
+WARNING: [Synth 8-3848] Net s_axi_bid in module/entity axi_amm_bridge_v1_0_9_top does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1822]
+WARNING: [Synth 8-3848] Net s_axi_rid in module/entity axi_amm_bridge_v1_0_9_top does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1834]
+WARNING: [Synth 8-3848] Net s_axi_rlast in module/entity axi_amm_bridge_v1_0_9_top does not have driver. [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1837]
+INFO: [Synth 8-6155] done synthesizing module 'axi_amm_bridge_v1_0_9_top' (2#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1768]
+INFO: [Synth 8-6155] done synthesizing module 'axi4_lite_amm_bridge' (3#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/synth/axi4_lite_amm_bridge.v:58]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_lite has unconnected port avm_resp[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_lite has unconnected port avm_resp[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_lite has unconnected port avm_writeresponsevalid
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_bid[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_bid[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_bid[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_bid[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rid[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rid[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rid[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rid[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rlast
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awid[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awid[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awid[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[7]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[6]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[5]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[4]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awsize[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awburst[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awburst[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_wlast
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arid[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arid[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arid[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arid[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[7]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[6]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[5]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[4]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arsize[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arsize[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arsize[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arburst[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arburst[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2421.492 ; gain = 154.434 ; free physical = 39559 ; free virtual = 47465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2430.398 ; gain = 163.340 ; free physical = 39635 ; free virtual = 47541
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2430.398 ; gain = 163.340 ; free physical = 39635 ; free virtual = 47541
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/axi4_lite_amm_bridge_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/axi4_lite_amm_bridge_ooc.xdc] for cell 'inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/axi4_lite_amm_bridge.xdc] for cell 'inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_lite_amm_bridge/axi4_lite_amm_bridge.xdc] for cell 'inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_lite_amm_bridge_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_lite_amm_bridge_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2630.867 ; gain = 0.000 ; free physical = 39389 ; free virtual = 47305
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2630.867 ; gain = 0.000 ; free physical = 39388 ; free virtual = 47304
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2630.867 ; gain = 363.809 ; free physical = 39434 ; free virtual = 47352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flgb2104-2LV-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2630.867 ; gain = 363.809 ; free physical = 39433 ; free virtual = 47351
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_lite_amm_bridge_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2630.867 ; gain = 363.809 ; free physical = 39436 ; free virtual = 47354
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'axi_amm_bridge_v1_0_9_lite'
+INFO: [Synth 8-5544] ROM "s_axi_awready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_wready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_arready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "avm_read" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "avm_write" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                        000001000 |                             0000
+            READ_ADDRESS |                        000000001 |                             0011
+               READ_DATA |                        000000010 |                             0100
+        INV_READ_ADDRESS |                        000000100 |                             0110
+           INV_READ_DATA |                        000010000 |                             1000
+           WRITE_AD_DATA |                        010000000 |                             0001
+              WRITE_RESP |                        000100000 |                             0010
+       INV_WRITE_ADDRESS |                        100000000 |                             0101
+          INV_WRITE_DATA |                        001000000 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'axi_amm_bridge_v1_0_9_lite'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2630.867 ; gain = 363.809 ; free physical = 39411 ; free virtual = 47332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   9 Input     32 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 13    
+	   9 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_amm_bridge_v1_0_9_lite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   9 Input     32 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 12    
+	   2 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 13    
+	   9 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_bid[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_bid[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_bid[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_bid[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rid[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rid[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rid[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rid[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_rlast
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awid[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awid[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awid[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[7]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[6]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[5]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[4]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awlen[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awsize[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awburst[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_awburst[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_wlast
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arid[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arid[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arid[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arid[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[7]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[6]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[5]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[4]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[3]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arlen[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arsize[2]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arsize[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arsize[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arburst[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port s_axi_arburst[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port avm_resp[1]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port avm_resp[0]
+WARNING: [Synth 8-3331] design axi_amm_bridge_v1_0_9_top has unconnected port avm_writeresponsevalid
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXI_LITE.I_AVA_MASTER_LITE/s_axi_rresp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXI_LITE.I_AVA_MASTER_LITE/s_axi_bresp_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2630.867 ; gain = 363.809 ; free physical = 39399 ; free virtual = 47327
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:47 . Memory (MB): peak = 2863.977 ; gain = 596.918 ; free physical = 38199 ; free virtual = 46157
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:47 . Memory (MB): peak = 2886.008 ; gain = 618.949 ; free physical = 38180 ; free virtual = 46133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:47 . Memory (MB): peak = 2894.016 ; gain = 626.957 ; free physical = 38173 ; free virtual = 46126
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 2894.016 ; gain = 626.957 ; free physical = 38158 ; free virtual = 46117
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 2894.016 ; gain = 626.957 ; free physical = 38158 ; free virtual = 46117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 2894.016 ; gain = 626.957 ; free physical = 38158 ; free virtual = 46116
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:48 . Memory (MB): peak = 2894.016 ; gain = 626.957 ; free physical = 38158 ; free virtual = 46116
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2894.016 ; gain = 626.957 ; free physical = 38157 ; free virtual = 46116
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2894.016 ; gain = 626.957 ; free physical = 38157 ; free virtual = 46116
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     3|
+|2     |LUT2 |     9|
+|3     |LUT3 |     6|
+|4     |LUT4 |     5|
+|5     |LUT5 |    14|
+|6     |LUT6 |    88|
+|7     |FDRE |   123|
+|8     |FDSE |     6|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------+---------------------------+------+
+|      |Instance                         |Module                     |Cells |
++------+---------------------------------+---------------------------+------+
+|1     |top                              |                           |   254|
+|2     |  inst                           |axi_amm_bridge_v1_0_9_top  |   254|
+|3     |    \AXI_LITE.I_AVA_MASTER_LITE  |axi_amm_bridge_v1_0_9_lite |   254|
++------+---------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 2894.016 ; gain = 626.957 ; free physical = 38157 ; free virtual = 46116
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 47 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 2894.016 ; gain = 426.488 ; free physical = 38182 ; free virtual = 46141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 2894.023 ; gain = 626.957 ; free physical = 38182 ; free virtual = 46141
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2999.594 ; gain = 0.000 ; free physical = 38021 ; free virtual = 45979
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 97 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:07 . Memory (MB): peak = 2999.594 ; gain = 1604.621 ; free physical = 38119 ; free virtual = 46077
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2999.594 ; gain = 0.000 ; free physical = 38119 ; free virtual = 46077
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_lite_amm_bridge_synth_1/axi4_lite_amm_bridge.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axi4_lite_amm_bridge, cache-ID = 53bbe35596c5db77
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3023.605 ; gain = 0.000 ; free physical = 38111 ; free virtual = 46070
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_lite_amm_bridge_synth_1/axi4_lite_amm_bridge.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi4_lite_amm_bridge_utilization_synth.rpt -pb axi4_lite_amm_bridge_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 25 00:12:22 2019...

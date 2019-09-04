@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug 25 07:15:05 2019
+# Process ID: 3305
+# Current directory: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/impl_2
+# Command line: vivado -log xilinx_dma_pcie_ep.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source xilinx_dma_pcie_ep.tcl -notrace
+# Log file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/impl_2/xilinx_dma_pcie_ep.vdi
+# Journal file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/impl_2/vivado.jou
+#-----------------------------------------------------------
+source xilinx_dma_pcie_ep.tcl -notrace

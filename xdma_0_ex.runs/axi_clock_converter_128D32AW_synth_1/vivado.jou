@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug 25 00:11:06 2019
+# Process ID: 14259
+# Current directory: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi_clock_converter_128D32AW_synth_1
+# Command line: vivado -log axi_clock_converter_128D32AW.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_clock_converter_128D32AW.tcl
+# Log file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi_clock_converter_128D32AW_synth_1/axi_clock_converter_128D32AW.vds
+# Journal file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi_clock_converter_128D32AW_synth_1/vivado.jou
+#-----------------------------------------------------------
+source axi_clock_converter_128D32AW.tcl -notrace

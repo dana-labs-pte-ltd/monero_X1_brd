@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="axi4_amm_bridge_synth_1" LaunchPart="xcvu9p-flgb2104-2LV-e" LaunchTime="1566663063">
+  <File Type="RDS-UTIL-PB" Name="axi4_amm_bridge_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="axi4_amm_bridge.dcp"/>
+  <File Type="RDS-RDS" Name="axi4_amm_bridge.vds"/>
+  <File Type="REPORTS-TCL" Name="axi4_amm_bridge_reports.tcl"/>
+  <File Type="PA-TCL" Name="axi4_amm_bridge.tcl"/>
+  <File Type="RDS-UTIL" Name="axi4_amm_bridge_utilization_synth.rpt"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi4_amm_bridge">
+    <File Path="$PSRCDIR/sources_1/ip/axi4_amm_bridge/axi4_amm_bridge.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axi4_amm_bridge"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi4_amm_bridge">
+    <File Path="$PSRCDIR/sources_1/ip/axi4_amm_bridge/axi4_amm_bridge.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="axi4_amm_bridge"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/impl_2/xilinx_dma_pcie_ep_routed.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PRUNDIR/impl_2/xilinx_dma_pcie_ep_routed.dcp"/>
+        <Attr Name="ImportTime" Val="1563608665"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="impl_2"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

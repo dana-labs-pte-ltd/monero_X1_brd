@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="mult_64wx64w_unsigned_synth_1" LaunchPart="xcvu9p-flgb2104-2LV-e" LaunchTime="1566688295">
+  <File Type="PA-TCL" Name="mult_64wx64w_unsigned.tcl"/>
+  <File Type="REPORTS-TCL" Name="mult_64wx64w_unsigned_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mult_64wx64w_unsigned.vds"/>
+  <File Type="RDS-DCP" Name="mult_64wx64w_unsigned.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mult_64wx64w_unsigned">
+    <File Path="$PSRCDIR/sources_1/ip/mult_64wx64w_unsigned/mult_64wx64w_unsigned.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="mult_64wx64w_unsigned"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mult_64wx64w_unsigned">
+    <File Path="$PSRCDIR/sources_1/ip/mult_64wx64w_unsigned/mult_64wx64w_unsigned.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="mult_64wx64w_unsigned"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/impl_2/xilinx_dma_pcie_ep_routed.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PRUNDIR/impl_2/xilinx_dma_pcie_ep_routed.dcp"/>
+        <Attr Name="ImportTime" Val="1566688292"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="impl_2"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,1393 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug 25 00:11:06 2019
+# Process ID: 14258
+# Current directory: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_amm_bridge_synth_1
+# Command line: vivado -log axi4_amm_bridge.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi4_amm_bridge.tcl
+# Log file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_amm_bridge_synth_1/axi4_amm_bridge.vds
+# Journal file: /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_amm_bridge_synth_1/vivado.jou
+#-----------------------------------------------------------
+source axi4_amm_bridge.tcl -notrace
+Command: synth_design -top axi4_amm_bridge -part xcvu9p-flgb2104-2LV-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
+INFO: [Device 21-403] Loading part xcvu9p-flgb2104-2LV-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14326 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2363.746 ; gain = 96.684 ; free physical = 39617 ; free virtual = 47522
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi4_amm_bridge' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/synth/axi4_amm_bridge.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axi_amm_bridge_v1_0_9_top' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1768]
+	Parameter C_ADDRESS_MODE bound to: 0 - type: integer 
+	Parameter C_HAS_FIXED_WAIT bound to: 0 - type: integer 
+	Parameter C_HAS_RESPONSE bound to: 0 - type: integer 
+	Parameter C_FIXED_WRITE_WAIT bound to: 1 - type: integer 
+	Parameter C_FIXED_READ_WAIT bound to: 1 - type: integer 
+	Parameter C_HAS_FIXED_READ_LATENCY bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_AVM_BURST_WIDTH bound to: 9 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_BURST_LENGTH bound to: 4 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 256 - type: integer 
+	Parameter C_NUM_ADDRESS_RANGES bound to: 0 - type: integer 
+	Parameter C_NUM_OUTSTANDING bound to: 1 - type: integer 
+	Parameter C_PROTOCOL bound to: 1 - type: integer 
+	Parameter C_BASE1_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_BASE2_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000100 
+	Parameter C_BASE3_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001000 
+	Parameter C_BASE4_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001100 
+	Parameter C_HIGH1_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000011 
+	Parameter C_HIGH2_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000000101 
+	Parameter C_HIGH3_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001001 
+	Parameter C_HIGH4_ADDR bound to: 64'b0000000000000000000000000000000000000000000000000000000000001111 
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter All_zero bound to: 9'b000000000 
+INFO: [Synth 8-6157] synthesizing module 'axi_amm_bridge_v1_0_9_full' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:994]
+	Parameter C_ADDRESS_MODE bound to: 0 - type: integer 
+	Parameter C_HAS_FIXED_WAIT bound to: 0 - type: integer 
+	Parameter C_HAS_RESPONSE bound to: 0 - type: integer 
+	Parameter C_FIXED_WRITE_WAIT bound to: 5 - type: integer 
+	Parameter C_FIXED_READ_WAIT bound to: 1 - type: integer 
+	Parameter C_HAS_FIXED_READ_LATENCY bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY bound to: 3 - type: integer 
+	Parameter C_BURST_LENGTH bound to: 4 - type: integer 
+	Parameter C_AVM_BURST_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_USE_WSTRB bound to: 0 - type: integer 
+	Parameter C_DPHASE_TIMEOUT bound to: 32 - type: integer 
+	Parameter C_NUM_OUTSTANDING bound to: 1 - type: integer 
+	Parameter C_PROTOCOL bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter IDLE bound to: 2'b00 
+	Parameter IDLE1 bound to: 2'b01 
+	Parameter IDLE3 bound to: 2'b10 
+	Parameter READ_ADDRESS bound to: 2'b11 
+	Parameter IDLE_DATA bound to: 2'b00 
+	Parameter WRITE_AD_DATA bound to: 2'b01 
+	Parameter WRITE_DATA bound to: 2'b10 
+	Parameter WRITE_RESP bound to: 2'b11 
+	Parameter RD_FIFO_WIDTH bound to: 135 - type: integer 
+	Parameter RD_FIFO_DEPTH bound to: 256 - type: integer 
+	Parameter STRB_CNT bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1246]
+INFO: [Synth 8-6157] synthesizing module 'axi_amm_bridge_v1_0_9_fifo' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:737]
+	Parameter C_CLOCK_DOMAIN bound to: COMMON - type: string 
+	Parameter C_RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter C_FIFO_MEMORY_TYPE bound to: BRAM - type: string 
+	Parameter C_ECC_MODE bound to: NO_ECC - type: string 
+	Parameter C_FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter C_WRITE_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter C_FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter C_READ_MODE bound to: FWFT - type: string 
+	Parameter C_FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter C_READ_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter C_DOUT_RESET_VALUE bound to: (null) - type: string 
+	Parameter C_RDCLK_FASTER bound to: 0 - type: integer 
+	Parameter C_CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter C_REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter C_AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter C_VERSION bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH_I bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1833]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: FWFT - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: (null) - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_SYNC bound to: 16'b0000011100000111 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 12 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: (null) - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 0 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 16 - type: integer 
+	Parameter FIFO_SIZE bound to: 192 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 4 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 4 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 11 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 11 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 5 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0000011100000111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 192 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 12 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 12 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 12 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 12 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 4 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: (null) - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 12 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 12 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 12 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 12 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 16 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 12 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 12 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 4 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 12 - type: integer 
+	Parameter rstb_loop_iter bound to: 12 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 12 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:486]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2882]
+INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (1#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1788]
+	Parameter RST_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (2#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1788]
+INFO: [Synth 8-226] default block is never used [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1187]
+INFO: [Synth 8-226] default block is never used [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1233]
+INFO: [Synth 8-226] default block is never used [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1244]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 2 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (3#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1504]
+	Parameter COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (4#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1504]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 5 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (4#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (4#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 4 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (4#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-4471] merging register 'gen_fwft.empty_fwft_fb_reg' into 'gen_fwft.empty_fwft_i_reg' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1292]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1292]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (5#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (6#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1833]
+WARNING: [Synth 8-7023] instance 'xpm_fifo_sync_inst' of module 'xpm_fifo_sync' has 25 connections declared, but only 21 given [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:831]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'axi_amm_bridge_v1_0_9_fifo' (7#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:737]
+INFO: [Synth 8-6157] synthesizing module 'axi_amm_bridge_v1_0_9_fifo__parameterized0' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:737]
+	Parameter C_CLOCK_DOMAIN bound to: COMMON - type: string 
+	Parameter C_RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter C_FIFO_MEMORY_TYPE bound to: BRAM - type: string 
+	Parameter C_ECC_MODE bound to: NO_ECC - type: string 
+	Parameter C_FIFO_WRITE_DEPTH bound to: 256 - type: integer 
+	Parameter C_WRITE_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter C_FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter C_READ_MODE bound to: FWFT - type: string 
+	Parameter C_FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter C_READ_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter C_DOUT_RESET_VALUE bound to: (null) - type: string 
+	Parameter C_RDCLK_FASTER bound to: 0 - type: integer 
+	Parameter C_CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter C_REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter C_AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter C_VERSION bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH_I bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized0' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1833]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 256 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: FWFT - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: (null) - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_SYNC bound to: 16'b0000011100000111 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 256 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: (null) - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 0 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 256 - type: integer 
+	Parameter FIFO_SIZE bound to: 32768 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 7 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 8 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 8 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 8 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 251 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 251 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 9 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 9 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0000011100000111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 32768 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 8 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 128 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 128 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 8 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: (null) - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 128 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 256 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 128 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 128 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 128 - type: integer 
+	Parameter rstb_loop_iter bound to: 128 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 128 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:486]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2882]
+INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (7#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1187]
+INFO: [Synth 8-226] default block is never used [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1233]
+INFO: [Synth 8-226] default block is never used [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1244]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 9 - type: integer 
+	Parameter RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (7#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 8 - type: integer 
+	Parameter RESET_VALUE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (7#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+	Parameter COUNTER_WIDTH bound to: 8 - type: integer 
+	Parameter RESET_VALUE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (7#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1740]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-4471] merging register 'gen_fwft.empty_fwft_fb_reg' into 'gen_fwft.empty_fwft_i_reg' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1292]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1292]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (7#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized0' (7#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1833]
+WARNING: [Synth 8-7023] instance 'xpm_fifo_sync_inst' of module 'xpm_fifo_sync' has 25 connections declared, but only 21 given [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:831]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'axi_amm_bridge_v1_0_9_fifo__parameterized0' (7#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:737]
+INFO: [Synth 8-6157] synthesizing module 'axi_amm_bridge_v1_0_9_fifo__parameterized1' [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:737]
+	Parameter C_CLOCK_DOMAIN bound to: COMMON - type: string 
+	Parameter C_RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter C_FIFO_MEMORY_TYPE bound to: BRAM - type: string 
+	Parameter C_ECC_MODE bound to: NO_ECC - type: string 
+	Parameter C_FIFO_WRITE_DEPTH bound to: 256 - type: integer 
+	Parameter C_WRITE_DATA_WIDTH bound to: 7 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter C_FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter C_READ_MODE bound to: FWFT - type: string 
+	Parameter C_FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter C_READ_DATA_WIDTH bound to: 7 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter C_DOUT_RESET_VALUE bound to: (null) - type: string 
+	Parameter C_RDCLK_FASTER bound to: 0 - type: integer 
+	Parameter C_CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter C_REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter C_AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter C_VERSION bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH_I bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized1' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1833]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 256 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 7 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: FWFT - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 7 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: (null) - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter EN_ADV_FEATURE_SYNC bound to: 16'b0000011100000111 
+	Parameter P_FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter P_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter P_ECC_MODE bound to: 0 - type: integer 
+	Parameter P_READ_MODE bound to: 1 - type: integer 
+	Parameter P_WAKEUP_TIME bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+	Parameter COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter FIFO_MEMORY_TYPE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 256 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 7 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 0707 - type: string 
+	Parameter READ_MODE bound to: 1 - type: integer 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 7 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 8 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: (null) - type: string 
+	Parameter CDC_DEST_SYNC_FF bound to: 2 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter REMOVE_WR_RD_PROT_LOGIC bound to: 0 - type: integer 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter invalid bound to: 0 - type: integer 
+	Parameter stage1_valid bound to: 2 - type: integer 
+	Parameter stage2_valid bound to: 1 - type: integer 
+	Parameter both_stages_valid bound to: 3 - type: integer 
+	Parameter FIFO_MEM_TYPE bound to: 0 - type: integer 
+	Parameter RD_MODE bound to: 1 - type: integer 
+	Parameter ENABLE_ECC bound to: 0 - type: integer 
+	Parameter FIFO_READ_DEPTH bound to: 256 - type: integer 
+	Parameter FIFO_SIZE bound to: 1792 - type: integer 
+	Parameter WR_WIDTH_LOG bound to: 3 - type: integer 
+	Parameter WR_DEPTH_LOG bound to: 8 - type: integer 
+	Parameter WR_PNTR_WIDTH bound to: 8 - type: integer 
+	Parameter RD_PNTR_WIDTH bound to: 8 - type: integer 
+	Parameter FULL_RST_VAL bound to: 1'b0 
+	Parameter WR_RD_RATIO bound to: 0 - type: integer 
+	Parameter PF_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PE_THRESH_ADJ bound to: 8 - type: integer 
+	Parameter PF_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PF_THRESH_MAX bound to: 251 - type: integer 
+	Parameter PE_THRESH_MIN bound to: 5 - type: integer 
+	Parameter PE_THRESH_MAX bound to: 251 - type: integer 
+	Parameter WR_DC_WIDTH_EXT bound to: 9 - type: integer 
+	Parameter RD_DC_WIDTH_EXT bound to: 9 - type: integer 
+	Parameter RD_LATENCY bound to: 2 - type: integer 
+	Parameter WIDTH_RATIO bound to: 1 - type: integer 
+	Parameter EN_ADV_FEATURE bound to: 16'b0000011100000111 
+	Parameter EN_OF bound to: 1'b1 
+	Parameter EN_PF bound to: 1'b1 
+	Parameter EN_WDC bound to: 1'b1 
+	Parameter EN_AF bound to: 1'b0 
+	Parameter EN_WACK bound to: 1'b0 
+	Parameter FG_EQ_ASYM_DOUT bound to: 1'b0 
+	Parameter EN_UF bound to: 1'b1 
+	Parameter EN_PE bound to: 1'b1 
+	Parameter EN_RDC bound to: 1'b1 
+	Parameter EN_AE bound to: 1'b0 
+	Parameter EN_DVLD bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+	Parameter MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter MEMORY_SIZE bound to: 1792 - type: integer 
+	Parameter MEMORY_PRIMITIVE bound to: 0 - type: integer 
+	Parameter CLOCKING_MODE bound to: 0 - type: integer 
+	Parameter ECC_MODE bound to: 0 - type: integer 
+	Parameter MEMORY_INIT_FILE bound to: none - type: string 
+	Parameter MEMORY_INIT_PARAM bound to: (null) - type: string 
+	Parameter USE_MEM_INIT bound to: 0 - type: integer 
+	Parameter MEMORY_OPTIMIZATION bound to: true - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter AUTO_SLEEP_TIME bound to: 0 - type: integer 
+	Parameter MESSAGE_CONTROL bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter USE_EMBEDDED_CONSTRAINT bound to: 0 - type: integer 
+	Parameter CASCADE_HEIGHT bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH_A bound to: 7 - type: integer 
+	Parameter READ_DATA_WIDTH_A bound to: 7 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_A bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_A bound to: 8 - type: integer 
+	Parameter READ_RESET_VALUE_A bound to: 0 - type: string 
+	Parameter READ_LATENCY_A bound to: 2 - type: integer 
+	Parameter WRITE_MODE_A bound to: 2 - type: integer 
+	Parameter RST_MODE_A bound to: SYNC - type: string 
+	Parameter WRITE_DATA_WIDTH_B bound to: 7 - type: integer 
+	Parameter READ_DATA_WIDTH_B bound to: 7 - type: integer 
+	Parameter BYTE_WRITE_WIDTH_B bound to: 7 - type: integer 
+	Parameter ADDR_WIDTH_B bound to: 8 - type: integer 
+	Parameter READ_RESET_VALUE_B bound to: (null) - type: string 
+	Parameter READ_LATENCY_B bound to: 2 - type: integer 
+	Parameter WRITE_MODE_B bound to: 2 - type: integer 
+	Parameter RST_MODE_B bound to: SYNC - type: string 
+	Parameter P_MEMORY_PRIMITIVE bound to: auto - type: string 
+	Parameter P_MIN_WIDTH_DATA_A bound to: 7 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_B bound to: 7 - type: integer 
+	Parameter P_MIN_WIDTH_DATA bound to: 7 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_ECC bound to: 7 - type: integer 
+	Parameter P_MAX_DEPTH_DATA bound to: 256 - type: integer 
+	Parameter P_ECC_MODE bound to: no_ecc - type: string 
+	Parameter P_MEMORY_OPT bound to: yes - type: string 
+	Parameter P_WIDTH_COL_WRITE_A bound to: 7 - type: integer 
+	Parameter P_WIDTH_COL_WRITE_B bound to: 7 - type: integer 
+	Parameter P_NUM_COLS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_COLS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_WRITE_B bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_A bound to: 1 - type: integer 
+	Parameter P_NUM_ROWS_READ_B bound to: 1 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_A bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_WRITE_B bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_A bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_READ_B bound to: 8 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_WRITE_B bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_A bound to: 0 - type: integer 
+	Parameter P_WIDTH_ADDR_LSB_READ_B bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_A bound to: 0 - type: integer 
+	Parameter P_ENABLE_BYTE_WRITE_B bound to: 0 - type: integer 
+	Parameter P_SDP_WRITE_MODE bound to: yes - type: string 
+	Parameter rsta_loop_iter bound to: 8 - type: integer 
+	Parameter rstb_loop_iter bound to: 8 - type: integer 
+	Parameter NUM_CHAR_LOC bound to: 0 - type: integer 
+	Parameter MAX_NUM_CHAR bound to: 0 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_SHFT bound to: 7 - type: integer 
+	Parameter P_MIN_WIDTH_DATA_LDW bound to: 4 - type: integer 
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:486]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2882]
+INFO: [Synth 8-5772] Detected attribute (* ram_ecc = "no_ecc" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (7#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:57]
+INFO: [Synth 8-226] default block is never used [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1187]
+INFO: [Synth 8-226] default block is never used [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1233]
+INFO: [Synth 8-226] default block is never used [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1244]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-4471] merging register 'gen_fwft.empty_fwft_fb_reg' into 'gen_fwft.empty_fwft_i_reg' [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1292]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1292]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (7#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized1' (7#1) [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1833]
+WARNING: [Synth 8-7023] instance 'xpm_fifo_sync_inst' of module 'xpm_fifo_sync' has 25 connections declared, but only 21 given [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:831]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'axi_amm_bridge_v1_0_9_fifo__parameterized1' (7#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:737]
+INFO: [Synth 8-226] default block is never used [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1506]
+WARNING: [Synth 8-6014] Unused sequential element start_reg was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1238]
+WARNING: [Synth 8-6014] Unused sequential element resp_seen_reg was removed.  [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1502]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'axi_amm_bridge_v1_0_9_full' (8#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:994]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'axi_amm_bridge_v1_0_9_top' (9#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1768]
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
+INFO: [Synth 8-6155] done synthesizing module 'axi4_amm_bridge' (10#1) [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/synth/axi4_amm_bridge.v:58]
+WARNING: [Synth 8-3331] design xpm_fifo_rst has unconnected port rd_clk
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port sleep
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port rsta
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port regcea
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port injectsbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port injectdbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port clkb
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[6]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[5]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[4]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[3]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[2]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[1]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port dinb[0]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port injectsbiterrb
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized1 has unconnected port injectdbiterrb
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port sleep
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port rsta
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port regcea
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectsbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port injectdbiterra
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port clkb
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[127]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[126]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[125]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[124]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[123]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[122]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[121]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[120]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[119]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[118]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[117]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[116]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[115]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[114]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[113]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[112]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[111]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[110]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[109]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[108]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[107]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[106]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[105]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[104]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[103]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[102]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[101]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[100]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[99]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[98]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[97]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[96]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[95]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[94]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[93]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[92]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[91]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[90]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[89]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[88]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[87]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[86]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[85]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[84]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[83]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[82]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[81]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[80]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[79]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[78]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[77]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[76]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[75]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[74]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[73]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[72]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[71]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[70]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[69]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[68]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[67]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[66]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[65]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[64]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[63]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[62]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[61]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[60]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[59]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[58]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[57]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[56]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[55]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[54]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[53]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[52]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[51]
+WARNING: [Synth 8-3331] design xpm_memory_base__parameterized0 has unconnected port dinb[50]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2422.465 ; gain = 155.402 ; free physical = 39631 ; free virtual = 47537
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2434.340 ; gain = 167.277 ; free physical = 39602 ; free virtual = 47509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2434.340 ; gain = 167.277 ; free physical = 39602 ; free virtual = 47509
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/axi4_amm_bridge_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/axi4_amm_bridge_ooc.xdc] for cell 'inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/axi4_amm_bridge.xdc] for cell 'inst'
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/axi4_amm_bridge.xdc] for cell 'inst'
+Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_amm_bridge_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_amm_bridge_synth_1/dont_touch.xdc]
+Sourcing Tcl File [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rid_fifo/xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rid_fifo/xpm_fifo_sync_inst'
+Sourcing Tcl File [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rdata_fifo/xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rdata_fifo/xpm_fifo_sync_inst'
+Sourcing Tcl File [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rresp_fifo/xpm_fifo_sync_inst'
+Finished Sourcing Tcl File [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'inst/AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rresp_fifo/xpm_fifo_sync_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/axi4_amm_bridge_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/axi4_amm_bridge_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2642.715 ; gain = 0.000 ; free physical = 39445 ; free virtual = 47362
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2642.715 ; gain = 0.000 ; free physical = 39445 ; free virtual = 47363
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2642.715 ; gain = 375.652 ; free physical = 39430 ; free virtual = 47354
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flgb2104-2LV-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2642.715 ; gain = 375.652 ; free physical = 39430 ; free virtual = 47354
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_amm_bridge_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst/\AXI_FULL.I_AVA_MASTER_FULL /ava_sync_rid_fifo/xpm_fifo_sync_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/\AXI_FULL.I_AVA_MASTER_FULL /ava_sync_rdata_fifo/xpm_fifo_sync_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/\AXI_FULL.I_AVA_MASTER_FULL /ava_sync_rresp_fifo/xpm_fifo_sync_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2642.715 ; gain = 375.652 ; free physical = 39430 ; free virtual = 47354
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1056]
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1056]
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/media/wanner/tool/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1056]
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized1'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.srcs/sources_1/ip/axi4_amm_bridge/hdl/axi_amm_bridge_v1_0_rfs.v:1422]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'axi_amm_bridge_v1_0_9_full'
+INFO: [Synth 8-802] inferred FSM for state register 'current_wr_state_reg' in module 'axi_amm_bridge_v1_0_9_full'
+INFO: [Synth 8-6904] The RAM "xpm_memory_base:/gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=12) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-6904] The RAM "xpm_memory_base__parameterized1:/gen_wr_a.gen_word_narrow.mem_reg" of size (depth=256 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   IDLE1 |                               01 |                               01
+                   IDLE3 |                               10 |                               10
+            READ_ADDRESS |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'axi_amm_bridge_v1_0_9_full'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+           WRITE_AD_DATA |                               01 |                               01
+              WRITE_DATA |                               10 |                               10
+              WRITE_RESP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_wr_state_reg' using encoding 'sequential' in module 'axi_amm_bridge_v1_0_9_full'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2642.715 ; gain = 375.652 ; free physical = 39388 ; free virtual = 47316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 8     
+	   2 Input      9 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 6     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   4 Input      5 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 1     
+	   4 Input      4 Bit       Adders := 3     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   4 Input      2 Bit       Adders := 3     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	                9 Bit    Registers := 12    
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 62    
++---RAMs : 
+	              32K Bit         RAMs := 1     
+	               1K Bit         RAMs := 1     
+	              192 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 103   
+	   4 Input      2 Bit        Muxes := 23    
+	   4 Input      1 Bit        Muxes := 28    
+	   2 Input      1 Bit        Muxes := 38    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xpm_memory_base 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
++---RAMs : 
+	              192 Bit         RAMs := 1     
+Module xpm_fifo_reg_bit 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module xpm_counter_updn 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module xpm_fifo_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module xpm_fifo_base 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   4 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 31    
+	   4 Input      2 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module xpm_memory_base__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module xpm_counter_updn__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module xpm_counter_updn__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module xpm_fifo_base__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   4 Input      9 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 31    
+	   4 Input      2 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module xpm_memory_base__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 2     
++---RAMs : 
+	               1K Bit         RAMs := 1     
+Module xpm_fifo_base__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   4 Input      9 Bit       Adders := 2     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 31    
+	   4 Input      2 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module axi_amm_bridge_v1_0_9_full 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-6904] The RAM "inst/\AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rid_fifo/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=12) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rresp_fifo/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=256 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rid_fifo/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=16 x width=12) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rresp_fifo/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst /gen_wr_a.gen_word_narrow.mem_reg" of size (depth=256 x width=7) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3886] merging instance 'inst/AXI_FULL.I_AVA_MASTER_FULL/s_axi_bresp_reg[0]' (FDRE) to 'inst/AXI_FULL.I_AVA_MASTER_FULL/s_axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXI_FULL.I_AVA_MASTER_FULL/s_axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2642.715 ; gain = 375.652 ; free physical = 39329 ; free virtual = 47257
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++---------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                      | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_memory_base__parameterized0: | gen_wr_a.gen_word_narrow.mem_reg | 256 x 128(READ_FIRST)  | W |   | 256 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
++---------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+----------------+
+|Module Name                                                                                                                   | RTL Object                       | Inference | Size (Depth x Width) | Primitives     | 
++------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+----------------+
+|inst/\AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rid_fifo/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst    | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 12              | RAM32M16 x 1   | 
+|inst/\AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rresp_fifo/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 256 x 7              | RAM64M8 x 4    | 
++------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 2872.270 ; gain = 605.207 ; free physical = 38109 ; free virtual = 46068
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:50 . Memory (MB): peak = 2896.301 ; gain = 629.238 ; free physical = 38083 ; free virtual = 46042
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++---------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                      | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++---------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|xpm_memory_base__parameterized0: | gen_wr_a.gen_word_narrow.mem_reg | 256 x 128(READ_FIRST)  | W |   | 256 x 128(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      |                 | 
++---------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping  Report
++------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+----------------+
+|Module Name                                                                                                                   | RTL Object                       | Inference | Size (Depth x Width) | Primitives     | 
++------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+----------------+
+|inst/\AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rid_fifo/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst    | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 12              | RAM32M16 x 1   | 
+|inst/\AXI_FULL.I_AVA_MASTER_FULL/ava_sync_rresp_fifo/xpm_fifo_sync_inst /xpm_fifo_base_inst/\gen_sdpram.xpm_memory_base_inst  | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 256 x 7              | RAM64M8 x 4    | 
++------------------------------------------------------------------------------------------------------------------------------+----------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:50 . Memory (MB): peak = 2904.309 ; gain = 637.246 ; free physical = 38046 ; free virtual = 46004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 2907.277 ; gain = 640.215 ; free physical = 38110 ; free virtual = 46069
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 2907.277 ; gain = 640.215 ; free physical = 38110 ; free virtual = 46069
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 2907.277 ; gain = 640.215 ; free physical = 38110 ; free virtual = 46069
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 2907.277 ; gain = 640.215 ; free physical = 38110 ; free virtual = 46069
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 2907.277 ; gain = 640.215 ; free physical = 38110 ; free virtual = 46069
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 2907.277 ; gain = 640.215 ; free physical = 38110 ; free virtual = 46069
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY8     |     8|
+|2     |LUT1       |    12|
+|3     |LUT2       |    80|
+|4     |LUT3       |   119|
+|5     |LUT4       |   102|
+|6     |LUT5       |    79|
+|7     |LUT6       |    95|
+|8     |RAM32M16   |     1|
+|9     |RAM64M8    |     4|
+|10    |RAMB36E2_1 |     2|
+|11    |FDRE       |   366|
+|12    |FDSE       |    21|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------------------------------------+-------------------------------------------+------+
+|      |Instance                                      |Module                                     |Cells |
++------+----------------------------------------------+-------------------------------------------+------+
+|1     |top                                           |                                           |   889|
+|2     |  inst                                        |axi_amm_bridge_v1_0_9_top                  |   889|
+|3     |    \AXI_FULL.I_AVA_MASTER_FULL               |axi_amm_bridge_v1_0_9_full                 |   889|
+|4     |      ava_sync_rdata_fifo                     |axi_amm_bridge_v1_0_9_fifo__parameterized0 |   210|
+|5     |        xpm_fifo_sync_inst                    |xpm_fifo_sync__parameterized0              |   208|
+|6     |          xpm_fifo_base_inst                  |xpm_fifo_base__parameterized0              |   208|
+|7     |            \gen_sdpram.xpm_memory_base_inst  |xpm_memory_base__parameterized0            |     2|
+|8     |            \gen_fwft.rdpp1_inst              |xpm_counter_updn_7                         |     8|
+|9     |            rdp_inst                          |xpm_counter_updn__parameterized3_8         |    49|
+|10    |            rdpp1_inst                        |xpm_counter_updn__parameterized4_9         |    18|
+|11    |            rst_d1_inst                       |xpm_fifo_reg_bit_10                        |     6|
+|12    |            wrp_inst                          |xpm_counter_updn__parameterized3_11        |    33|
+|13    |            wrpp1_inst                        |xpm_counter_updn__parameterized4_12        |    26|
+|14    |            xpm_fifo_rst_inst                 |xpm_fifo_rst_13                            |    13|
+|15    |      ava_sync_rid_fifo                       |axi_amm_bridge_v1_0_9_fifo                 |   160|
+|16    |        xpm_fifo_sync_inst                    |xpm_fifo_sync                              |   150|
+|17    |          xpm_fifo_base_inst                  |xpm_fifo_base                              |   150|
+|18    |            \gen_sdpram.xpm_memory_base_inst  |xpm_memory_base                            |    25|
+|19    |            \gen_fwft.rdpp1_inst              |xpm_counter_updn_2                         |     5|
+|20    |            rdp_inst                          |xpm_counter_updn__parameterized0           |    24|
+|21    |            rdpp1_inst                        |xpm_counter_updn__parameterized1           |     8|
+|22    |            rst_d1_inst                       |xpm_fifo_reg_bit_3                         |     4|
+|23    |            wrp_inst                          |xpm_counter_updn__parameterized0_4         |    20|
+|24    |            wrpp1_inst                        |xpm_counter_updn__parameterized1_5         |    12|
+|25    |            xpm_fifo_rst_inst                 |xpm_fifo_rst_6                             |    16|
+|26    |      ava_sync_rresp_fifo                     |axi_amm_bridge_v1_0_9_fifo__parameterized1 |   237|
+|27    |        xpm_fifo_sync_inst                    |xpm_fifo_sync__parameterized1              |   235|
+|28    |          xpm_fifo_base_inst                  |xpm_fifo_base__parameterized1              |   235|
+|29    |            \gen_sdpram.xpm_memory_base_inst  |xpm_memory_base__parameterized1            |    29|
+|30    |            \gen_fwft.rdpp1_inst              |xpm_counter_updn                           |     8|
+|31    |            rdp_inst                          |xpm_counter_updn__parameterized3           |    49|
+|32    |            rdpp1_inst                        |xpm_counter_updn__parameterized4           |    18|
+|33    |            rst_d1_inst                       |xpm_fifo_reg_bit                           |     6|
+|34    |            wrp_inst                          |xpm_counter_updn__parameterized3_0         |    33|
+|35    |            wrpp1_inst                        |xpm_counter_updn__parameterized4_1         |    26|
+|36    |            xpm_fifo_rst_inst                 |xpm_fifo_rst                               |    13|
++------+----------------------------------------------+-------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 2907.277 ; gain = 640.215 ; free physical = 38110 ; free virtual = 46069
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 179 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 2907.277 ; gain = 431.840 ; free physical = 38143 ; free virtual = 46096
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 2907.285 ; gain = 640.215 ; free physical = 38143 ; free virtual = 46096
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3007.520 ; gain = 0.000 ; free physical = 39715 ; free virtual = 47669
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 1 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+123 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:01:10 . Memory (MB): peak = 3007.520 ; gain = 1613.543 ; free physical = 39813 ; free virtual = 47767
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3007.520 ; gain = 0.000 ; free physical = 39813 ; free virtual = 47767
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_amm_bridge_synth_1/axi4_amm_bridge.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP axi4_amm_bridge, cache-ID = 44b05451fbce676e
+INFO: [Coretcl 2-1174] Renamed 35 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3031.531 ; gain = 0.000 ; free physical = 39806 ; free virtual = 47761
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/media/wanner/work/work/fpga_prj/Xmrig-fpga/xmrig_X1_brd/CNv4_top/xdma_0_ex.runs/axi4_amm_bridge_synth_1/axi4_amm_bridge.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi4_amm_bridge_utilization_synth.rpt -pb axi4_amm_bridge_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 25 00:12:26 2019...
